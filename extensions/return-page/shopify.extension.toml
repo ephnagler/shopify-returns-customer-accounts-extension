@@ -1,0 +1,14 @@
+# Order full page for returns: select items, see the refund, then start
+# an exchange or request a return. Opened from the return-item button.
+# customer-account.order.page.render can't share an extension with other targets.
+api_version = "2026-10"
+
+[[extensions]]
+name = "Return page"
+handle = "return-page"
+type = "ui_extension"
+uid = "df92d9a7-c2dd-ac7d-e5da-0db1ec19b18116d3d9fa"
+
+[[extensions.targeting]]
+module = "./src/ReturnPage.tsx"
+target = "customer-account.order.page.render"

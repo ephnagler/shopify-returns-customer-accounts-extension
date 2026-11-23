@@ -1,0 +1,105 @@
+{
+  "page": {
+    "heading": "Start a return",
+    "back": "Back",
+    "backToOrder": "Back to order",
+    "loadError": "We cannot show your return options now. Try again later.",
+    "notReturnable": "You cannot return items from this order."
+  },
+  "select": {
+    "heading": "Select items",
+    "help": "Select the items that you want to send back.",
+    "quantity": "Quantity",
+    "exchangeOrder": "This order is an exchange. You cannot exchange it again. You can request a refund or store credit. Both have the return shipping and handling fee."
+  },
+  "locked": {
+    "final_sale": "Final sale. You cannot return this item.",
+    "not_delivered": "This item is not delivered yet.",
+    "window_expired": "The return period is closed.",
+    "other": "You cannot return this item."
+  },
+  "exchange": {
+    "freeLabel": "Free return label",
+    "freeLabelNote": "We send you a free return label when your new order is of equal or greater value than the returned item.",
+    "stepsHeading": "How exchanges work",
+    "stepSubmit": "Select the button below and we will review your request.",
+    "step1": "Place a new order in our store for the item that you want. The new order must be of equal or greater value. You pay for the new item and its shipping.",
+    "step2": "At checkout, make sure the order note says “Exchange {{order}}”. The Shop latest button adds it for you. If it is not there, type it.",
+    "step3": "When we see your new order, we send you a free return label by email. Write your order number, {{name}}, on the packing list.",
+    "step4": "Send the return {{returnWindow}}. We refund the returned item after we receive it.",
+    "shopLatest": "Shop latest"
+  },
+  "done": {
+    "heading": "We received your request",
+    "body": "We received your return request for order {{name}}.",
+    "exchangeHeading": "Your exchange is open",
+    "exchangeBody": "We received your exchange request for order {{name}}.",
+    "nextHeading": "Next steps"
+  },
+  "cta": {
+    "continue": "Continue",
+    "exchange": "Request an exchange",
+    "refund": "Request a refund",
+    "storeCredit": "Request store credit"
+  },
+  "details": {
+    "heading": "Tell us why",
+    "oneSize": "O/S",
+    "reason": "Reason for return",
+    "reasonPlaceholder": "Select a reason",
+    "reasonRequired": "Select a reason.",
+    "note": "Details (optional)",
+    "noteCount": "{{count}} of {{max}} characters"
+  },
+  "summary": {
+    "calculating": "Calculating your refund",
+    "itemValue": "Item value",
+    "tax": "Tax",
+    "fee": "Return shipping and handling",
+    "feeWaived": "Free",
+    "restocking": "Restocking fee",
+    "total": "Estimated refund",
+    "totalCredit": "Estimated store credit"
+  },
+  "choose": {
+    "heading": "Return or exchange",
+    "exchangeHeading": "Exchange for a different item",
+    "exchangeCta": "Continue with exchange",
+    "or": "Or",
+    "returnHeading": "Return your item",
+    "returnCta": "Continue with return",
+    "error": "We cannot send your request. Try again or contact us."
+  },
+  "confirm": {
+    "exchangeHeading": "Exchange for a different item",
+    "returnHeading": "Return for store credit or a refund"
+  },
+  "refund": {
+    "label": "Refund to",
+    "card": "Original payment method",
+    "credit": "Store credit"
+  },
+  "policy": {
+    "heading": "Return policy",
+    "window": "Send your return {{returnWindow}}.",
+    "condition": "Items must be new and unused, with all tags attached. Do not wear, change, or wash the items.",
+    "timing": "We process your return 1 to 2 business days after we receive it. Your bank can need 3 to 5 more business days.",
+    "link": "Read the full return policy",
+    "agree": "I read the return policy. My items are new and unused, with all tags attached.",
+    "agreeRequired": "Confirm that you read the return policy."
+  },
+  "return": {
+    "stepsHeading": "How returns work",
+    "stepSubmit": "Select the button below and we will review your request.",
+    "step1": "We send you a return label by email.",
+    "step2": "Pack the items neatly. Put a copy of the packing list in the box, and write your order number, {{name}}, on it. Remove old labels from the box.",
+    "step3": "Print the label at actual size and attach it to the box. Give the box to the carrier on the label. Ship the return {{returnWindow}}.",
+    "step4": "When we receive the return, we send your refund or store credit, minus the fees in your estimate. We send you an email within 1 to 2 days."
+  },
+  "international": {
+    "step1": "Pack the items neatly. Put a copy of the packing list in the box, and write your order number, {{name}}, on it.",
+    "step2": "Write “Returned Goods” on the box and on the customs form.",
+    "step3": "Send the box, tracked and insured, to: [Your return address]. You pay for return shipping. Send it {{returnWindow}}.",
+    "step4": "When we receive the return, we send your refund or store credit, minus the fees in your estimate. We send you an email within 1 to 2 days."
+  }
+}

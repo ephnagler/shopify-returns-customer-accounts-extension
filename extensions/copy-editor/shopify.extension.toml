@@ -1,0 +1,13 @@
+# App admin page (Apps > this app): Home docs and Settings (copy editor,
+# Shopify settings checklist). Shopify-hosted; copy saves to shop metafield $app:copy.
+api_version = "2026-10"
+
+[[extensions]]
+name = "t:name"
+handle = "copy-editor"
+type = "ui_extension"
+uid = "bc6d3907-6821-174c-6517-e4ec9e4aed513592e215"
+
+[[extensions.targeting]]
+module = "./src/App.tsx"
+target = "admin.app.home.render"

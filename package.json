@@ -1,0 +1,27 @@
+{
+  "name": "shopify-returns-customer-accounts-extension",
+  "version": "1.0.0",
+  "license": "MIT",
+  "workspaces": [
+    "extensions/*"
+  ],
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy",
+    "test": "node --test test/",
+    "seed": "node scripts/seed-returns.mjs",
+    "typecheck": "tsc -p extensions/return-item && tsc -p extensions/return-page && tsc -p extensions/copy-editor"
+  },
+  "dependencies": {},
+  "trustedDependencies": [
+    "@shopify/plugin-cloudflare"
+  ],
+  "private": true,
+  "devDependencies": {
+    "typescript": "~5.9.3"
+  }
+}

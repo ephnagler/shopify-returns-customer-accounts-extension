@@ -1,0 +1,15 @@
+# "Return item" button in the customer account order action menu.
+# https://shopify.dev/docs/api/customer-account-ui-extensions/latest#configuration
+api_version = "2026-10"
+
+[[extensions]]
+name = "Start return button"
+handle = "return-item"
+type = "ui_extension"
+uid = "8a9e5eff-b74e-e9f4-8586-62d15c8f2e6a35c2834c"
+
+# Renders nothing when the order fails the return rules
+# (shared/returns/eligibility.ts). Links to the return-page extension.
+[[extensions.targeting]]
+module = "./src/MenuItem.tsx"
+target = "customer-account.order.action.menu-item.render"

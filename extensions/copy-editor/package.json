@@ -1,0 +1,11 @@
+{
+  "name": "returns-copy-editor",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "preact": "^10.10.x",
+    "@shopify/ui-extensions": "2026.10.x",
+    "preact-iso": "^2.9.1"
+  }
+}

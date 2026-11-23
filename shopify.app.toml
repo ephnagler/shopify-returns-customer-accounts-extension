@@ -1,0 +1,55 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+# Run `shopify app config link` to create or link your own app and fill in client_id.
+client_id = ""
+name = "Returns & Exchanges (example)"
+# Extension-only app: Shopify hosts everything, no app server.
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2026-10"
+
+[access.admin]
+# The copy-editor admin page calls the Admin API directly (shopify.query)
+# as the signed-in staff member.
+direct_api_mode = "online"
+
+[access_scopes]
+# Customer Account API only. The app needs no Admin API access.
+# customer_write_customers is the scope Shopify documents for orderRequestReturn.
+scopes = "customer_read_customers,customer_read_orders,customer_write_customers"
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+
+# The exchange-order marker is a merchant-owned order metafield made in
+# Shopify admin (custom.exchange_order, true/false, customer account access: Read).
+# It is not declared here so it stays independent of this app.
+
+# Customer-facing copy that staff edit in the copy-editor admin page. JSON object of
+# locale key -> text; missing keys use the extension locale defaults.
+[shop.metafields.app.copy]
+name = "Return copy"
+description = "Edited text for the return pages. Edit it in the app's Settings page."
+type = "json"
+
+  [shop.metafields.app.copy.access]
+  admin = "merchant_read"
+  customer_account = "read"
+
+# The store's return rules (window, fees, which rules are on), edited in Settings >
+# Policy rules. JSON object; missing or bad settings use the defaults in
+# shared/returns/policy.ts.
+[shop.metafields.app.policy]
+name = "Return rules"
+description = "Return window, fees, and which return rules are on. Edit it in the app's Settings page."
+type = "json"
+
+  [shop.metafields.app.policy.access]
+  admin = "merchant_read"
+  customer_account = "read"
